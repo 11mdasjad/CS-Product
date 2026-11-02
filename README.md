@@ -121,3 +121,5 @@ Shared final prompt: Use case: identity-preserve. Asset type: enhanced original 
 Kapil prompt suffix: Subject: ONLY CA Kapil Arora, the middle photo, man with glasses wearing a black blazer and white shirt with crossed arms. Exclude both other men.
 
 Veer prompt suffix: Subject: ONLY CA Veer Singh, the rightmost photo, man with short black hair and trimmed beard wearing a white collared shirt facing camera. Exclude both other men.
+
+The website theme now follows the logo's navy and orange palette: navy `#082653`, orange `#ff6b00`, darker orange `#b74600` for readable text, and light orange `#ffb679` on navy panels. Primary buttons use orange with navy text; gold accents and green-tinted decorative surfaces were replaced with orange and pale blue. Portraits remain full frame. The supplied logo and WhatsApp brand mark keep their original colors.
