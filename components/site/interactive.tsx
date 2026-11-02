@@ -827,65 +827,90 @@ export function FloatingActions() {
 export function Footer() {
   return (
     <footer className="footer">
-      <div className="footer-main">
-        <div>
+      <div className="footer-layout">
+        <div className="footer-identity">
           <Brand />
-          <p>
-            Clarity for your business.
+          <p className="footer-statement">
+            Clarity today.
             <br />
-            Confidence for the road ahead.
+            <em>Confidence tomorrow.</em>
           </p>
-          <a className="footer-email" href={"mailto:" + firm.email}>
-            {firm.email} <ArrowUpRight size={17} />
-          </a>
+          <p className="footer-description">
+            Audit, taxation and financial advisory.
+            <br />A clear perspective for your next step.
+          </p>
+          <Link href="/consultation" className="footer-consultation">
+            Let’s talk business <ArrowUpRight size={18} />
+          </Link>
         </div>
-        <div>
+        <nav className="footer-links" aria-label="Footer navigation">
           <h3>Explore</h3>
           {[
             ["About us", "/about"],
             ["Our team", "/team"],
             ["Insights & blogs", "/insights"],
             ["Contact us", "/contact"],
-          ].map(([n, h]) => (
-            <Link key={h} href={h}>
-              {n}
+          ].map(([name, href]) => (
+            <Link key={href} href={href}>
+              {name}
             </Link>
           ))}
-        </div>
-        <div>
+        </nav>
+        <nav className="footer-links" aria-label="Footer services">
           <h3>Our expertise</h3>
-          {services.map((s) => (
-            <Link href={"/services/" + s.slug} key={s.slug}>
-              {s.name}
+          {services.map((service) => (
+            <Link href={"/services/" + service.slug} key={service.slug}>
+              {service.name}
             </Link>
           ))}
-        </div>
-        <div>
+        </nav>
+        <div className="footer-contact">
           <h3>Let’s connect</h3>
-          <a href="tel:+919990860356">{firm.phone}</a>
-          <a href="tel:+918929295155">{firm.phone2}</a>
-          <p>{firm.address}</p>
-          <a
-            href={firm.maps}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-link"
-          >
-            Get directions <ArrowUpRight size={16} />
-          </a>
+          <div className="footer-contact-row">
+            <Phone size={18} aria-hidden="true" />
+            <div>
+              <span className="footer-contact-label">CALL OUR TEAM</span>
+              <a href="tel:+919990860356">{firm.phone}</a>
+              <a href="tel:+918929295155">{firm.phone2}</a>
+            </div>
+          </div>
+          <div className="footer-contact-row">
+            <Mail size={18} aria-hidden="true" />
+            <div>
+              <span className="footer-contact-label">WRITE TO US</span>
+              <a href={"mailto:" + firm.email}>{firm.email}</a>
+            </div>
+          </div>
+          <div className="footer-contact-row footer-office">
+            <MapPin size={18} aria-hidden="true" />
+            <div>
+              <span className="footer-contact-label">
+                VISIT OUR NOIDA OFFICE
+              </span>
+              <address>{firm.address}</address>
+              <a
+                href={firm.maps}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="footer-directions"
+              >
+                Get directions <ArrowUpRight size={15} />
+              </a>
+            </div>
+          </div>
         </div>
       </div>
-      <div className="footer-bottom">
+      <div className="footer-legal">
         <span>
           © {new Date().getFullYear()} VVK & Associates. All rights reserved.
         </span>
-        <div>
+        <nav aria-label="Legal information">
           <Link href="/privacy">Privacy Policy</Link>
           <Link href="/terms">Terms of Use</Link>
           <Link href="/privacy#cookies">Cookie information</Link>
-        </div>
-        <span className="india-mark">
-          Based in India. Thinking ahead. <i />
+        </nav>
+        <span className="footer-location">
+          <span aria-hidden="true" /> Based in India. Thinking ahead.
         </span>
       </div>
     </footer>
