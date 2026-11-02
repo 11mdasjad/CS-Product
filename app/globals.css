@@ -3758,3 +3758,42 @@ summary {
     margin: 0 auto;
   }
 }
+
+/* Original partner photographs framed from the supplied team slide. */
+.partner-portrait.has-cropped-photo {
+  background: #112e5b;
+}
+.portrait-crop {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+  flex: none;
+}
+.portrait-crop svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.partner-portrait .portrait-crop {
+  height: calc(100% - 32px);
+  width: auto;
+  align-self: flex-start;
+  margin-top: 12px;
+}
+.profile-portrait.profile-cropped {
+  max-width: 400px;
+  background: #112e5b;
+  padding: 24px;
+}
+.profile-cropped .portrait-crop {
+  width: 100%;
+}
+@media (max-width: 640px) {
+  .partner-portrait .portrait-crop {
+    height: 145px;
+    margin-top: 8px;
+    border-radius: 12px;
+  }
+}

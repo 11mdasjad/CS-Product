@@ -109,3 +109,5 @@ WhatsApp brand icon: Simple Icons 14.15.0, https://cdn.jsdelivr.net/npm/simple-i
 CA Vikash Kumar’s designation and complete three-paragraph biography were updated from the user’s supplied text on 2 November 2026. The dedicated profile preserves the full wording; the team page expands the complete biography, and homepage cards use a concise summary.
 
 Vikash portrait: original user-supplied photograph, copied unchanged from `WhatsApp Image 2026-11-02 at 13.50.14.jpeg` to `public/images/vikash.jpg`. Card framing uses CSS; the full photograph is shown on the dedicated profile.
+
+Kapil Arora and Veer Singh portraits: framed directly from the user-supplied team slide (`WhatsApp Image 2026-11-02 at 14.13.04.jpeg`), stored unchanged as `public/images/team-source.jpg`. The shared `PartnerPhoto` component uses SVG viewports to display each original portrait without recreating faces. Used on team cards and individual profiles. Vikash retains his higher-resolution original photograph.

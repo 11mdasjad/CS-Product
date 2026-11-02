@@ -1,6 +1,7 @@
 "use client";
 import { useState, useEffect, useRef } from "react";
 import Link from "@/components/site/link";
+import { PartnerPhoto } from "./partner-photo";
 import {
   ArrowUpRight,
   ArrowRight,
@@ -433,18 +434,15 @@ export function TeamCards({ expand = false }: { expand?: boolean }) {
           <Link
             href={"/team/" + p.slug}
             className={
-              "partner-portrait portrait-" + i + (p.image ? " has-photo" : "")
+              "partner-portrait portrait-" +
+              i +
+              (p.image || p.portraitCrop ? " has-photo" : "") +
+              (p.portraitCrop ? " has-cropped-photo" : "")
             }
             aria-label={"View " + p.name + " profile"}
           >
-            {p.image ? (
-              <img
-                src={p.image}
-                alt={p.name}
-                width={1024}
-                height={1536}
-                loading="lazy"
-              />
+            {p.image || p.portraitCrop ? (
+              <PartnerPhoto partner={p} />
             ) : (
               <span className="portrait-monogram">{p.initials}</span>
             )}

@@ -1,4 +1,5 @@
 import Link from "@/components/site/link";
+import { PartnerPhoto } from "./partner-photo";
 import {
   ArrowUpRight,
   ArrowRight,
@@ -623,15 +624,13 @@ export function PartnerPage({ slug }: { slug: string }) {
   return (
     <>
       <section className="section partner-profile">
-        {p.image ? (
-          <div className="profile-portrait">
-            <img
-              src={p.image}
-              alt={p.name + ", " + p.role + " at VVK & Associates"}
-              width={1024}
-              height={1536}
-              fetchPriority="high"
-            />
+        {p.image || p.portraitCrop ? (
+          <div
+            className={
+              "profile-portrait" + (p.portraitCrop ? " profile-cropped" : "")
+            }
+          >
+            <PartnerPhoto partner={p} priority />
           </div>
         ) : (
           <div className="large-monogram">
