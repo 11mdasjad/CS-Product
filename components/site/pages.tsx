@@ -131,8 +131,8 @@ export function HomePage({ articles }: { articles: Article[] }) {
       <section className="section about-preview" id="about">
         <div className="about-image">
           <img
-            src="/images/office.jpg"
-            alt="Illustrative sunlit workspace with natural materials"
+            src="/images/accounting-review.jpg"
+            alt="Illustrative accounting review with documents and calculator"
             loading="lazy"
           />
           <span className="image-note">A FRESH PERSPECTIVE ON FINANCE.</span>
@@ -369,12 +369,12 @@ export function ServicePage({ slug }: { slug: string }) {
           <img
             src={
               s.category === "Build"
-                ? "/images/office.jpg"
+                ? "/images/accounting-review.jpg"
                 : s.category === "Comply"
                   ? "/images/desk.jpg"
-                  : "/images/building.jpg"
+                  : "/images/financial-documents.jpg"
             }
-            alt="Illustrative business environment"
+            alt="Illustrative financial document review and advisory work"
           />
           <div>
             <ServiceIcon name={s.icon} size={36} />
@@ -489,8 +489,8 @@ export function AboutPage() {
       />
       <section className="about-wide">
         <img
-          src="/images/office.jpg"
-          alt="Illustrative contemporary office interior"
+          src="/images/accounting-review.jpg"
+          alt="Professional reviewing organised accounting records"
         />
         <span>CLARITY. INTEGRITY. PERSPECTIVE.</span>
       </section>

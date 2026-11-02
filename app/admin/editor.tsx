@@ -6,7 +6,7 @@ const blank = (): Article => ({
   title: "",
   category: "Business",
   excerpt: "",
-  image: "/images/office.jpg",
+  image: "/images/accounting-review.jpg",
   date: new Date().toISOString().slice(0, 10),
   author: "VVK Editorial",
   body: "",
@@ -192,6 +192,12 @@ export function ContentEditor() {
                   value={article.image}
                   onChange={(e) => update("image", e.target.value)}
                 >
+                  <option value="/images/accounting-review.jpg">
+                    Accounting review
+                  </option>
+                  <option value="/images/financial-documents.jpg">
+                    Financial records
+                  </option>
                   <option value="/images/office.jpg">Office</option>
                   <option value="/images/building.jpg">Architecture</option>
                   <option value="/images/desk.jpg">Financial desk</option>

@@ -100,6 +100,8 @@ export async function PUT(request: Request) {
       "/images/office.jpg",
       "/images/building.jpg",
       "/images/desk.jpg",
+      "/images/accounting-review.jpg",
+      "/images/financial-documents.jpg",
     ].includes(d.image)
   )
     return json(

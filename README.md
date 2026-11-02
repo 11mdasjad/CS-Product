@@ -92,3 +92,14 @@ Prompt: Extract only the circular CA emblem from the upper right corner of the s
 ## Services redesign
 
 The homepage and services directory share a redesigned service browser: category pills with counts, a navy photographic introduction, six editorial service cards with concise scope highlights, and a consultation link. The feature copy responds to the selected category. Mobile layouts use a compact image-backed introduction and full-width cards. Desktop/mobile/tablet checks verified filtering, links and no horizontal overflow.
+
+## Accounting photography and readability update
+
+Replaced generic architectural imagery in the hero, service feature, about sections, service detail pages and bundled articles with relevant accounting-document photography. These remain illustrative stock images, not portraits of VVK staff.
+
+- Accounting review — Mikhail Nilov, Pexels: https://www.pexels.com/photo/a-person-examining-documents-8296970/ → `public/images/accounting-review.jpg`.
+- Financial records — RDNE Stock project, Pexels: https://www.pexels.com/photo/white-papers-on-the-table-7821708/ → `public/images/financial-documents.jpg`.
+
+Both source pages identify the photographs as free to use. Image files are hosted locally. The existing desk-advisory photo remains in the first hero panel. The CMS includes the new covers while retaining existing cover options for older articles.
+
+Body descriptions now use 16px type in the principal sections, with darker navy-grey text. Service titles are 30px, service labels 11–12px, and primary buttons 14px. Dark panels retain light text for contrast. Navigation switches to the mobile menu earlier to make room for larger labels.

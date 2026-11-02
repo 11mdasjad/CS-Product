@@ -14,7 +14,9 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     siteName: "VVK & Associates",
-    images: [{ url: "/images/office.jpg", width: 1200, height: 801 }],
+    images: [
+      { url: "/images/financial-documents.jpg", width: 1400, height: 933 },
+    ],
   },
   twitter: { card: "summary_large_image" },
 };

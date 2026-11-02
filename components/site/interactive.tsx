@@ -186,24 +186,24 @@ const panels = [
   {
     label: "Build.",
     sub: "A strong beginning.",
-    image: "/images/office.jpg",
-    alt: "Sunlit contemporary office, illustrative image",
+    image: "/images/desk.jpg",
+    alt: "Illustrative business advisory discussion over financial documents",
     link: "/services/startup-advisory",
     tag: "START WITH CLARITY",
   },
   {
     label: "Grow.",
     sub: "With a clearer perspective.",
-    image: "/images/building.jpg",
-    alt: "Upward view of contemporary glass architecture",
+    image: "/images/financial-documents.jpg",
+    alt: "Financial records reviewed with a calculator and laptop",
     link: "/services/virtual-cfo",
     tag: "PLAN FOR WHAT’S NEXT",
   },
   {
     label: "Thrive.",
     sub: "Confidence in every detail.",
-    image: "/images/desk.jpg",
-    alt: "Illustrative financial planning documents on a desk",
+    image: "/images/accounting-review.jpg",
+    alt: "An accountant checking documents with a calculator",
     link: "/services/audit-assurance",
     tag: "STAY ONE STEP AHEAD",
   },
@@ -371,8 +371,8 @@ export function ServicesGrid() {
           </div>
           <div className="expertise-feature-image">
             <img
-              src="/images/building.jpg"
-              alt="Upward view of modern architecture"
+              src="/images/accounting-review.jpg"
+              alt="Accounting documents, calculator and organised financial records"
               loading="lazy"
             />
             <div className="expertise-feature-caption">

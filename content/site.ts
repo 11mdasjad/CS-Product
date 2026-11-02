@@ -293,7 +293,7 @@ export const seedArticles: Article[] = [
     category: "Business",
     excerpt:
       "Ownership, funding and future plans all belong in your first business-structure conversation.",
-    image: "/images/office.jpg",
+    image: "/images/accounting-review.jpg",
     date: "2026-11-02",
     author: "VVK Editorial",
     status: "published",
@@ -305,7 +305,7 @@ export const seedArticles: Article[] = [
     category: "Audit",
     excerpt:
       "Clear records and early conversations help make the audit process more manageable.",
-    image: "/images/building.jpg",
+    image: "/images/financial-documents.jpg",
     date: "2026-11-02",
     author: "VVK Editorial",
     status: "published",
