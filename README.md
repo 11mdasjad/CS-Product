@@ -65,7 +65,7 @@ Known old URLs `/about-us/`, `/our-team/`, `/our-services/`, `/contact-us/` and 
 
 Business details come from the supplied brief and the firm's indexed [about](https://vvkglobal.com/about-us/) and [team](https://vvkglobal.com/our-team/) pages. The Gurugram address appears on the existing firm site; confirm office arrangements before visiting. Vikash's B.Com, ACA and ID (IICA) qualifications come from the supplied brief.
 
-No business card images or usable original logo were attached. The header is an original typographic wordmark, not a reproduction of an ICAI symbol. Genuine partner photos were unavailable, so partner cards use initials. Replace these only with authorised genuine portraits. Stock office and desk photography is illustrative, not a claim about the firm's premises or staff.
+The user subsequently supplied the VVK business card. Its CA emblem was extracted with the built-in Imagegen tool and is used in the header, footer and browser icon. The project asset is `public/images/ca-logo.png`. Genuine partner photos were unavailable, so partner cards use initials. Replace these only with authorised genuine portraits. Stock office and desk photography is illustrative, not a claim about the firm's premises or staff.
 
 Article content is original, evergreen introductory reading, dated 2 November 2026. It contains no claimed regulatory deadlines or tax rates. Before making the site publicly accessible on the firm's domain, the firm should review its content and applicable professional-conduct requirements. The current deployment is owner-private.
 
@@ -82,3 +82,9 @@ No advertising or analytics scripts are used. Cookie information explains necess
 ## Verification
 
 TypeScript and production build pass. Browser checks cover desktop (1440px) and mobile (390px), all content routes, 404, sitemap and robots, intact images, one H1 per HTML page, service filtering, dropdown/keyboard close, blog search and no-results state, partner expansion, FAQ expansion, mobile navigation and the unconfigured email fallback. No browser runtime errors were observed. The CMS login, draft persistence, publication, unpublication and logout were verified against the local database with temporary credentials. Live email delivery and production CMS login require the runtime settings above; they are not claimed as connected.
+
+## Logo extraction record
+
+Built-in Imagegen mode; transparent output. Saved project asset: `public/images/ca-logo.png`.
+
+Prompt: Extract only the circular CA emblem from the upper right corner of the supplied VVK & Associates business card. Preserve the navy CA letter shapes, saffron and green angular swooshes, and thin gold circle. Remove card text and decorative waves. Center the complete emblem on a square transparent canvas with clear padding, without redesign, added text or shadows.

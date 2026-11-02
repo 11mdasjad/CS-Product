@@ -43,9 +43,13 @@ export function ServiceIcon({
 export function Brand() {
   return (
     <Link href="/" className="brand" aria-label="VVK & Associates home">
-      <span className="brand-mark">
-        V<span>V</span>K<i />
-      </span>
+      <img
+        className="brand-logo"
+        src="/images/ca-logo.png"
+        alt="CA logo"
+        width={62}
+        height={62}
+      />
       <span className="brand-name">
         VVK & ASSOCIATES<small>CHARTERED ACCOUNTANTS</small>
       </span>

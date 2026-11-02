@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   },
   description:
     "Partner-led audit, taxation, bookkeeping and financial advisory for businesses and individuals. VVK & Associates, Chartered Accountants, Noida.",
-  icons: { icon: "/favicon.svg" },
+  icons: { icon: "/images/ca-logo.png", apple: "/images/ca-logo.png" },
   openGraph: {
     type: "website",
     siteName: "VVK & Associates",
