@@ -171,7 +171,7 @@ export function HomePage({ articles }: { articles: Article[] }) {
           </Link>
         </div>
       </section>
-      <section className="section services-section">
+      <section className="section services-section" id="services">
         <div className="section-heading">
           <div>
             <Eyebrow>OUR EXPERTISE</Eyebrow>

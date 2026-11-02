@@ -277,44 +277,152 @@ export function ServiceFinder() {
     </form>
   );
 }
+const serviceHighlights: Record<string, string> = {
+  "startup-advisory": "Strategy · Planning · Funding readiness",
+  taxation: "Income Tax · GST · International tax",
+  "audit-assurance": "Statutory audit · Controls · Assurance",
+  "international-bookkeeping": "Ledgers · Reconciliation · Reporting",
+  "virtual-cfo": "Cash flow · Forecasting · Financial strategy",
+  "business-incorporation": "Private limited · LLP · Business structure",
+};
+const servicePerspectives: Record<
+  string,
+  { label: string; title: string; accent: string; description: string }
+> = {
+  "All services": {
+    label: "ONE CONNECTED PERSPECTIVE",
+    title: "Your business.",
+    accent: "A clearer way forward.",
+    description:
+      "The right financial advice, at the right stage of your journey.",
+  },
+  Build: {
+    label: "START WITH A STRONG FOUNDATION",
+    title: "Big ideas.",
+    accent: "Considered beginnings.",
+    description:
+      "Turn your plans into a business with a clear structure and financial direction.",
+  },
+  Comply: {
+    label: "CONFIDENCE IN THE DETAILS",
+    title: "Clear records.",
+    accent: "Informed decisions.",
+    description:
+      "Navigate tax, reporting and assurance with a thoughtful professional perspective.",
+  },
+  Manage: {
+    label: "SEE THE BIGGER PICTURE",
+    title: "Better visibility.",
+    accent: "A stronger next step.",
+    description:
+      "Connect everyday accounting with the financial decisions that shape your future.",
+  },
+};
 export function ServicesGrid() {
   const [cat, setCat] = useState("All services");
+  const visible = services.filter(
+    (s) => cat === "All services" || s.category === cat,
+  );
+  const perspective = servicePerspectives[cat];
   return (
-    <>
-      <div className="filter-tabs" role="group" aria-label="Filter services">
-        {["All services", "Build", "Comply", "Manage"].map((c) => (
-          <button
-            key={c}
-            className={cat === c ? "selected" : ""}
-            aria-pressed={cat === c}
-            onClick={() => setCat(c)}
-          >
-            {c}
-          </button>
-        ))}
+    <div className="expertise-browser">
+      <div className="expertise-toolbar">
+        <div
+          className="expertise-filters"
+          role="group"
+          aria-label="Filter services"
+        >
+          {["All services", "Build", "Comply", "Manage"].map((c) => (
+            <button
+              key={c}
+              className={cat === c ? "selected" : ""}
+              aria-pressed={cat === c}
+              onClick={() => setCat(c)}
+            >
+              {c}
+              <span>{c === "All services" ? "06" : "02"}</span>
+            </button>
+          ))}
+        </div>
+        <span className="expertise-count" role="status">
+          {String(visible.length).padStart(2, "0")} areas of expertise{" "}
+          <span aria-hidden="true">↙</span>
+        </span>
       </div>
-      <div className="services-grid">
-        {services
-          .filter((s) => cat === "All services" || s.category === cat)
-          .map((s, i) => (
+      <div className="expertise-layout">
+        <aside className="expertise-feature">
+          <div className="expertise-feature-copy">
+            <span className="expertise-kicker">
+              <span />
+              {perspective.label}
+            </span>
+            <h3>
+              {perspective.title}
+              <br />
+              <em>{perspective.accent}</em>
+            </h3>
+            <p>{perspective.description}</p>
+            <Link href="/consultation" className="expertise-consult">
+              Let’s find your next step{" "}
+              <span>
+                <ArrowUpRight size={18} />
+              </span>
+            </Link>
+          </div>
+          <div className="expertise-feature-image">
+            <img
+              src="/images/building.jpg"
+              alt="Upward view of modern architecture"
+              loading="lazy"
+            />
+            <div className="expertise-feature-caption">
+              <span>VVK & ASSOCIATES</span>
+              <span>Clarity. Confidence. Growth.</span>
+            </div>
+          </div>
+        </aside>
+        <div className="expertise-grid">
+          {visible.map((s) => (
             <Link
               href={"/services/" + s.slug}
               key={s.slug}
-              className="service-card"
+              className="expertise-card"
             >
-              <div className="service-top">
-                <ServiceIcon name={s.icon} />
-                <span>0{services.indexOf(s) + 1}</span>
+              <div className="expertise-card-top">
+                <span className="expertise-icon">
+                  <ServiceIcon name={s.icon} size={25} />
+                </span>
+                <span className="expertise-category">{s.category}</span>
+                <span className="expertise-number">
+                  0{services.indexOf(s) + 1}
+                </span>
               </div>
               <h3>{s.name}</h3>
               <p>{s.desc}</p>
-              <span className="text-link">
-                Explore service <ArrowUpRight size={18} />
-              </span>
+              <div className="expertise-card-footer">
+                <span>{serviceHighlights[s.slug]}</span>
+                <span className="expertise-card-arrow" aria-hidden="true">
+                  <ArrowUpRight size={19} />
+                </span>
+              </div>
+              <span className="sr-only">Explore {s.name}</span>
             </Link>
           ))}
+        </div>
       </div>
-    </>
+      <div className="expertise-bottom">
+        <span>
+          <ShieldCheck size={16} />
+          Partner-led advice. Personal attention.
+        </span>
+        <Link href="/contact">
+          Not sure where to begin?{" "}
+          <span>
+            Talk to us <ArrowRight size={15} />
+          </span>
+        </Link>
+      </div>
+    </div>
   );
 }
 export function TeamCards({ expand = false }: { expand?: boolean }) {

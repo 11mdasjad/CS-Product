@@ -88,3 +88,7 @@ TypeScript and production build pass. Browser checks cover desktop (1440px) and 
 Built-in Imagegen mode; transparent output. Saved project asset: `public/images/ca-logo.png`.
 
 Prompt: Extract only the circular CA emblem from the upper right corner of the supplied VVK & Associates business card. Preserve the navy CA letter shapes, saffron and green angular swooshes, and thin gold circle. Remove card text and decorative waves. Center the complete emblem on a square transparent canvas with clear padding, without redesign, added text or shadows.
+
+## Services redesign
+
+The homepage and services directory share a redesigned service browser: category pills with counts, a navy photographic introduction, six editorial service cards with concise scope highlights, and a consultation link. The feature copy responds to the selected category. Mobile layouts use a compact image-backed introduction and full-width cards. Desktop/mobile/tablet checks verified filtering, links and no horizontal overflow.
