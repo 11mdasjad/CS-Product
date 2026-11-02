@@ -445,7 +445,7 @@ export function TeamCards({ expand = false }: { expand?: boolean }) {
               <Link href={"/team/" + p.slug}>{p.name}</Link>
             </h3>
             <div className="qualification">{p.qualification}</div>
-            <p>{p.bio}</p>
+            <p>{expand && p.fullBio ? p.fullBio[0] : p.bio}</p>
             {expand ? (
               <>
                 <button
@@ -464,7 +464,13 @@ export function TeamCards({ expand = false }: { expand?: boolean }) {
                   <ChevronDown size={16} />
                 </button>
                 {expanded.includes(p.slug) && (
-                  <p id={"bio-" + p.slug}>{p.more}</p>
+                  <div id={"bio-" + p.slug}>
+                    {(p.fullBio ? p.fullBio.slice(1) : [p.more]).map(
+                      (paragraph, index) => (
+                        <p key={index}>{paragraph}</p>
+                      ),
+                    )}
+                  </div>
                 )}
               </>
             ) : (

@@ -609,7 +609,7 @@ export function TeamPage() {
         label="Our team"
         title="People you can talk to."
         accent="Perspective you can build on."
-        desc="Meet the three founding partners behind VVK & Associates. Complementary areas of expertise, with a shared commitment to professional care."
+        desc="Meet the professionals behind VVK & Associates. Complementary areas of expertise, with a shared commitment to professional care."
       />
       <section className="section after-intro">
         <TeamCards expand />
@@ -635,10 +635,16 @@ export function PartnerPage({ slug }: { slug: string }) {
           </div>
           <Eyebrow>{p.role.toUpperCase()}</Eyebrow>
           <h1>{p.name}</h1>
+          {p.designation && (
+            <p className="profile-designation">{p.designation}</p>
+          )}
           <div className="profile-qualification">{p.qualification}</div>
           <h2>{p.focus}</h2>
-          <p className="lead">{p.bio}</p>
-          <p>{p.more}</p>
+          {(p.fullBio || [p.bio, p.more]).map((paragraph, index) => (
+            <p key={index} className={index === 0 ? "lead" : undefined}>
+              {paragraph}
+            </p>
+          ))}
           <Link href="/consultation" className="button">
             Request a conversation <ArrowUpRight size={18} />
           </Link>

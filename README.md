@@ -105,3 +105,5 @@ Both source pages identify the photographs as free to use. Image files are hoste
 Body descriptions now use 16px type in the principal sections, with darker navy-grey text. Service titles are 30px, service labels 11–12px, and primary buttons 14px. Dark panels retain light text for contrast. Navigation switches to the mobile menu earlier to make room for larger labels.
 
 WhatsApp brand icon: Simple Icons 14.15.0, https://cdn.jsdelivr.net/npm/simple-icons@14.15.0/icons/whatsapp.svg. Stored locally as `public/images/whatsapp.svg`; the floating button links to the firm’s existing WhatsApp number.
+
+CA Vikash Kumar’s designation and complete three-paragraph biography were updated from the user’s supplied text on 2 November 2026. The dedicated profile preserves the full wording; the team page expands the complete biography, and homepage cards use a concise summary.
