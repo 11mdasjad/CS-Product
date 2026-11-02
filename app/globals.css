@@ -3759,41 +3759,28 @@ summary {
   }
 }
 
-/* Original partner photographs framed from the supplied team slide. */
-.partner-portrait.has-cropped-photo {
-  background: #112e5b;
+/* Enhanced portraits fill the entire card, with no inset or blue surround. */
+.partner-portrait.has-photo {
+  height: 360px;
+  background: #f5f3f0;
 }
-.portrait-crop {
-  display: block;
-  position: relative;
-  overflow: hidden;
-  border-radius: 20px;
-  flex: none;
+.partner-portrait.has-studio-photo img {
+  object-position: center 25%;
 }
-.portrait-crop svg {
-  display: block;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
+.partner-portrait.has-photo::after {
+  background: linear-gradient(transparent 75%, rgba(20, 20, 20, 0.45));
 }
-.partner-portrait .portrait-crop {
-  height: calc(100% - 32px);
-  width: auto;
-  align-self: flex-start;
-  margin-top: 12px;
-}
-.profile-portrait.profile-cropped {
-  max-width: 400px;
-  background: #112e5b;
-  padding: 24px;
-}
-.profile-cropped .portrait-crop {
-  width: 100%;
+@media (max-width: 980px) and (min-width: 641px) {
+  .partner-portrait.has-photo {
+    height: 290px;
+  }
 }
 @media (max-width: 640px) {
-  .partner-portrait .portrait-crop {
-    height: 145px;
-    margin-top: 8px;
-    border-radius: 12px;
+  .partner-portrait.has-photo {
+    height: 185px;
+  }
+  .partner-portrait.has-studio-photo img {
+    transform: none;
+    object-position: center 20%;
   }
 }

@@ -624,12 +624,8 @@ export function PartnerPage({ slug }: { slug: string }) {
   return (
     <>
       <section className="section partner-profile">
-        {p.image || p.portraitCrop ? (
-          <div
-            className={
-              "profile-portrait" + (p.portraitCrop ? " profile-cropped" : "")
-            }
-          >
+        {p.image ? (
+          <div className="profile-portrait">
             <PartnerPhoto partner={p} priority />
           </div>
         ) : (

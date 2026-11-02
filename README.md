@@ -111,3 +111,13 @@ CA Vikash Kumar’s designation and complete three-paragraph biography were upda
 Vikash portrait: original user-supplied photograph, copied unchanged from `WhatsApp Image 2026-11-02 at 13.50.14.jpeg` to `public/images/vikash.jpg`. Card framing uses CSS; the full photograph is shown on the dedicated profile.
 
 Kapil Arora and Veer Singh portraits: framed directly from the user-supplied team slide (`WhatsApp Image 2026-11-02 at 14.13.04.jpeg`), stored unchanged as `public/images/team-source.jpg`. The shared `PartnerPhoto` component uses SVG viewports to display each original portrait without recreating faces. Used on team cards and individual profiles. Vikash retains his higher-resolution original photograph.
+
+### Full-frame portrait enhancement
+
+The screenshot framing above has been replaced at the user's request. Enhanced portraits now fill cards and profile frames without a blue surround. Original references remain available. Built-in imagegen edit mode produced `public/images/kapil-enhanced.png` and `public/images/veer-enhanced.png` from `public/images/team-source.jpg`.
+
+Shared final prompt: Use case: identity-preserve. Asset type: enhanced original team portrait for a chartered accountants website. Input is an edit target: supplied team slide. Extract only the specified person's original photograph, remove ALL slide layout, blue panels, borders, rounded corners and text. Output one rectangular high-resolution portrait, 4:5 aspect, head and upper torso with ample headroom. Extend only the plain off-white photo background as needed to reach edges. Gently improve sharpness, compression artifacts, exposure and natural detail. Keep the exact person's facial geometry, expression, hairstyle, complexion, age, clothing and pose from the reference; no beautification, no different face, no extra accessories, no text. This is a faithful photo restoration, not a redesign.
+
+Kapil prompt suffix: Subject: ONLY CA Kapil Arora, the middle photo, man with glasses wearing a black blazer and white shirt with crossed arms. Exclude both other men.
+
+Veer prompt suffix: Subject: ONLY CA Veer Singh, the rightmost photo, man with short black hair and trimmed beard wearing a white collared shirt facing camera. Exclude both other men.

@@ -436,12 +436,12 @@ export function TeamCards({ expand = false }: { expand?: boolean }) {
             className={
               "partner-portrait portrait-" +
               i +
-              (p.image || p.portraitCrop ? " has-photo" : "") +
-              (p.portraitCrop ? " has-cropped-photo" : "")
+              (p.image ? " has-photo" : "") +
+              (p.studioPortrait ? " has-studio-photo" : "")
             }
             aria-label={"View " + p.name + " profile"}
           >
-            {p.image || p.portraitCrop ? (
+            {p.image ? (
               <PartnerPhoto partner={p} />
             ) : (
               <span className="portrait-monogram">{p.initials}</span>
