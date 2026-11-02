@@ -1,4 +1,4 @@
-import { env } from "cloudflare:workers";
+import { env } from "@/lib/runtime-env";
 import { getDb } from "@/db";
 import { articles } from "@/db/schema";
 import { getArticles } from "@/lib/articles";
@@ -10,7 +10,7 @@ export async function GET(request: Request) {
       {
         code: "NOT_CONFIGURED",
         message:
-          "The content editor is locked until CMS_PASSWORD (at least 24 characters) is set in server environment settings.",
+          "The content editor requires a connected database and CMS_PASSWORD (at least 24 characters) in server environment settings.",
       },
       503,
     );

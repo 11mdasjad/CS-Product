@@ -1,4 +1,4 @@
-import { env } from "cloudflare:workers";
+import { env } from "@/lib/runtime-env";
 import { services } from "@/content/site";
 import { sameOrigin, readJson, rateLimit, json } from "@/lib/server-security";
 export async function POST(request: Request) {
@@ -44,7 +44,7 @@ export async function POST(request: Request) {
     );
   if (website || typeof started !== "number" || Date.now() - started < 2500)
     return json({ message: "Please review your enquiry and try again." }, 400);
-  if (!env.RESEND_API_KEY || !env.RESEND_FROM_EMAIL)
+  if (!env.DB || !env.RESEND_API_KEY || !env.RESEND_FROM_EMAIL)
     return json(
       {
         code: "NOT_CONFIGURED",

@@ -1,7 +1,15 @@
-import { env } from "cloudflare:workers";
+import { env } from "@/lib/runtime-env";
 export function sameOrigin(request: Request) {
   const origin = request.headers.get("origin");
-  return !!origin && origin === new URL(request.url).origin;
+  if (!origin) return false;
+  const url = new URL(request.url);
+  // Next.js can reconstruct request.url with an internal hostname. The Host
+  // header retains the browser-facing authority; never trust forwarded hosts.
+  const host = request.headers.get("host");
+  return (
+    origin === url.origin ||
+    (!!host && origin === `${url.protocol}//${host}`)
+  );
 }
 export async function readJson(request: Request) {
   if (!request.headers.get("content-type")?.includes("application/json"))

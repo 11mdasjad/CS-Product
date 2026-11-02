@@ -123,3 +123,9 @@ Kapil prompt suffix: Subject: ONLY CA Kapil Arora, the middle photo, man with gl
 Veer prompt suffix: Subject: ONLY CA Veer Singh, the rightmost photo, man with short black hair and trimmed beard wearing a white collared shirt facing camera. Exclude both other men.
 
 The website theme now follows the logo's navy and orange palette: navy `#082653`, orange `#ff6b00`, darker orange `#b74600` for readable text, and light orange `#ffb679` on navy panels. Primary buttons use orange with navy text; gold accents and green-tinted decorative surfaces were replaced with orange and pale blue. Portraits remain full frame. The supplied logo and WhatsApp brand mark keep their original colors.
+
+## Vercel deployment
+
+Vercel builds native Next.js using `npm run build:vercel` (`next build --webpack`) and `.next` output, as specified by `vercel.json`. Node is pinned to the 22.x release line. `npm run build` also selects Next.js when `VERCEL=1`; the existing Sites build and local preview continue to use Vinext/Cloudflare. Use `npm run start:vercel` to smoke-test the native production build locally.
+
+Set `SITE_URL` to the canonical production origin if using a custom domain. Otherwise Vercel's `VERCEL_PROJECT_PRODUCTION_URL` supplies the canonical host. Public pages and bundled insights work on Vercel without Cloudflare bindings. The D1-backed CMS and email rate limiter belong to the Sites runtime: they remain explicitly unconfigured on Vercel until a persistent database integration is added. Contact forms preserve their email/WhatsApp fallback and never report a successful delivery when unconfigured. Email delivery also requires `RESEND_API_KEY` and a verified `RESEND_FROM_EMAIL`; CMS access requires `CMS_PASSWORD` of at least 24 characters. Never commit real credentials.

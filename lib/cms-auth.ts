@@ -1,7 +1,7 @@
-import { env } from "cloudflare:workers";
+import { env } from "@/lib/runtime-env";
 const enc = new TextEncoder();
 export const cmsReady = () =>
-  !!env.CMS_PASSWORD && env.CMS_PASSWORD.length >= 24;
+  !!env.DB && !!env.CMS_PASSWORD && env.CMS_PASSWORD.length >= 24;
 async function signature(value: string) {
   const key = await crypto.subtle.importKey(
     "raw",
