@@ -103,3 +103,5 @@ Replaced generic architectural imagery in the hero, service feature, about secti
 Both source pages identify the photographs as free to use. Image files are hosted locally. The existing desk-advisory photo remains in the first hero panel. The CMS includes the new covers while retaining existing cover options for older articles.
 
 Body descriptions now use 16px type in the principal sections, with darker navy-grey text. Service titles are 30px, service labels 11–12px, and primary buttons 14px. Dark panels retain light text for contrast. Navigation switches to the mobile menu earlier to make room for larger labels.
+
+WhatsApp brand icon: Simple Icons 14.15.0, https://cdn.jsdelivr.net/npm/simple-icons@14.15.0/icons/whatsapp.svg. Stored locally as `public/images/whatsapp.svg`; the floating button links to the firm’s existing WhatsApp number.

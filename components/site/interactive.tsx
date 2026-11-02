@@ -8,7 +8,6 @@ import {
   X,
   ChevronDown,
   ArrowUp,
-  MessageCircle,
   Check,
   Search,
   ShieldCheck,
@@ -796,7 +795,13 @@ export function FloatingActions() {
         className="whatsapp"
         aria-label="Contact VVK on WhatsApp"
       >
-        <MessageCircle size={23} />
+        <img
+          src="/images/whatsapp.svg"
+          width={25}
+          height={25}
+          alt=""
+          aria-hidden="true"
+        />
       </a>
     </div>
   );
