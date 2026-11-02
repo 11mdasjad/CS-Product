@@ -432,11 +432,25 @@ export function TeamCards({ expand = false }: { expand?: boolean }) {
         <article className="team-card" key={p.slug}>
           <Link
             href={"/team/" + p.slug}
-            className={"partner-portrait portrait-" + i}
+            className={
+              "partner-portrait portrait-" + i + (p.image ? " has-photo" : "")
+            }
             aria-label={"View " + p.name + " profile"}
           >
-            <span className="portrait-monogram">{p.initials}</span>
-            <span className="portrait-caption">PARTNER / 0{i + 1}</span>
+            {p.image ? (
+              <img
+                src={p.image}
+                alt={p.name}
+                width={1024}
+                height={1536}
+                loading="lazy"
+              />
+            ) : (
+              <span className="portrait-monogram">{p.initials}</span>
+            )}
+            <span className="portrait-caption">
+              {p.role === "Founder" ? "FOUNDER" : "PARTNER"} / 0{i + 1}
+            </span>
             <ArrowUpRight size={25} />
           </Link>
           <div className="partner-details">

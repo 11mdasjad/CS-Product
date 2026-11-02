@@ -165,6 +165,7 @@ export default async function Page({ params }: Props) {
       "@type": "Person",
       name: person.name,
       jobTitle: person.role,
+      ...(person.image ? { image: siteUrl + person.image } : {}),
       worksFor: { "@type": "Organization", name: "VVK & Associates" },
     });
   return (

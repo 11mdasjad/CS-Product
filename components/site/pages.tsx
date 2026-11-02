@@ -623,10 +623,22 @@ export function PartnerPage({ slug }: { slug: string }) {
   return (
     <>
       <section className="section partner-profile">
-        <div className="large-monogram">
-          <span>{p.initials}</span>
-          <small>VVK & ASSOCIATES</small>
-        </div>
+        {p.image ? (
+          <div className="profile-portrait">
+            <img
+              src={p.image}
+              alt={p.name + ", " + p.role + " at VVK & Associates"}
+              width={1024}
+              height={1536}
+              fetchPriority="high"
+            />
+          </div>
+        ) : (
+          <div className="large-monogram">
+            <span>{p.initials}</span>
+            <small>VVK & ASSOCIATES</small>
+          </div>
+        )}
         <div>
           <div className="breadcrumbs">
             <Link href="/team">Our team</Link>

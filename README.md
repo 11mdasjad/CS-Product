@@ -65,7 +65,7 @@ Known old URLs `/about-us/`, `/our-team/`, `/our-services/`, `/contact-us/` and 
 
 Business details come from the supplied brief and the firm's indexed [about](https://vvkglobal.com/about-us/) and [team](https://vvkglobal.com/our-team/) pages. The Gurugram address appears on the existing firm site; confirm office arrangements before visiting. Vikash's B.Com, ACA and ID (IICA) qualifications come from the supplied brief.
 
-The user subsequently supplied the VVK business card. Its CA emblem was extracted with the built-in Imagegen tool and is used in the header, footer and browser icon. The project asset is `public/images/ca-logo.png`. Genuine partner photos were unavailable, so partner cards use initials. Replace these only with authorised genuine portraits. Stock office and desk photography is illustrative, not a claim about the firm's premises or staff.
+The user subsequently supplied the VVK business card. Its CA emblem was extracted with the built-in Imagegen tool and is used in the header, footer and browser icon. The project asset is `public/images/ca-logo.png`. Vikash Kumar’s user-supplied photograph is used on his homepage/about/team cards and detailed profile. The remaining partner cards use initials until authorised genuine portraits are supplied. Stock office and desk photography is illustrative, not a claim about the firm's premises or staff.
 
 Article content is original, evergreen introductory reading, dated 2 November 2026. It contains no claimed regulatory deadlines or tax rates. Before making the site publicly accessible on the firm's domain, the firm should review its content and applicable professional-conduct requirements. The current deployment is owner-private.
 
@@ -107,3 +107,5 @@ Body descriptions now use 16px type in the principal sections, with darker navy-
 WhatsApp brand icon: Simple Icons 14.15.0, https://cdn.jsdelivr.net/npm/simple-icons@14.15.0/icons/whatsapp.svg. Stored locally as `public/images/whatsapp.svg`; the floating button links to the firm’s existing WhatsApp number.
 
 CA Vikash Kumar’s designation and complete three-paragraph biography were updated from the user’s supplied text on 2 November 2026. The dedicated profile preserves the full wording; the team page expands the complete biography, and homepage cards use a concise summary.
+
+Vikash portrait: original user-supplied photograph, copied unchanged from `WhatsApp Image 2026-11-02 at 13.50.14.jpeg` to `public/images/vikash.jpg`. Card framing uses CSS; the full photograph is shown on the dedicated profile.

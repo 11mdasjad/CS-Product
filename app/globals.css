@@ -3714,3 +3714,47 @@ summary {
   font-weight: 600;
   margin: 0 0 15px;
 }
+
+/* User-supplied portrait: upper-body framing in cards, full photograph on profile. */
+.partner-portrait.has-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+}
+.partner-portrait.has-photo::before {
+  display: none;
+}
+.partner-portrait.has-photo::after {
+  inset: 0;
+  border: 0;
+  border-radius: 0;
+  background: linear-gradient(transparent 65%, rgba(9, 24, 48, 0.65));
+  pointer-events: none;
+}
+.partner-portrait.has-photo .portrait-caption,
+.partner-portrait.has-photo > svg {
+  color: #fff;
+  z-index: 1;
+}
+.profile-portrait {
+  width: 100%;
+  border-radius: 14px;
+  overflow: hidden;
+  align-self: start;
+}
+.profile-portrait img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+@media (max-width: 640px) {
+  .partner-portrait.has-photo img {
+    transform: scale(1.6);
+    transform-origin: 50% 0;
+  }
+  .profile-portrait {
+    max-width: 380px;
+    margin: 0 auto;
+  }
+}
