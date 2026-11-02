@@ -23,7 +23,7 @@ html {
 }
 body {
   margin: 0;
-  background: #eaf0f8;
+  background: var(--ivory);
   color: var(--ink);
   font-family: var(--sans);
   font-size: 14px;
@@ -100,12 +100,11 @@ p {
   outline-offset: 5px;
 }
 .site-frame {
-  max-width: 1600px;
-  margin: 25px auto;
+  width: 100%;
+  min-height: 100dvh;
+  margin: 0;
   background: var(--ivory);
-  border-radius: 26px;
   overflow: clip;
-  width: calc(100% - 50px);
 }
 .header {
   height: 112px;
@@ -1815,11 +1814,6 @@ details > p {
   }
 }
 @media (max-width: 980px) {
-  .site-frame {
-    width: calc(100% - 30px);
-    margin: 15px auto;
-    border-radius: 20px;
-  }
   .header {
     height: 90px;
   }
@@ -2080,11 +2074,6 @@ details > p {
 @media (max-width: 640px) {
   body {
     font-size: 13px;
-  }
-  .site-frame {
-    width: 100%;
-    margin: 0;
-    border-radius: 0;
   }
   .header {
     height: 78px;
