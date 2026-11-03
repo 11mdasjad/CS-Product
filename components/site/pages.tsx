@@ -769,19 +769,11 @@ export function ContactPage({
             <br />
             <em>or a message away.</em>
           </h2>
-          <a href="tel:+919990860356">
+          <a href={firm.phoneHref}>
             <Phone size={20} />
             <span>
               {firm.phone}
               <small>Call our team</small>
-            </span>
-            <ArrowUpRight size={18} />
-          </a>
-          <a href="tel:+918929295155">
-            <Phone size={20} />
-            <span>
-              {firm.phone2}
-              <small>Alternate contact</small>
             </span>
             <ArrowUpRight size={18} />
           </a>

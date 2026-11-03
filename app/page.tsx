@@ -1,3 +1,4 @@
+import { firm } from "@/content/site";
 import { HomePage } from "@/components/site/pages";
 import { getArticles } from "@/lib/articles";
 import { siteUrl } from "@/lib/site-url";
@@ -8,7 +9,7 @@ export default async function Page() {
     "@type": "AccountingService",
     name: "VVK & Associates",
     url: siteUrl,
-    telephone: "+91-99908-60356",
+    telephone: firm.phoneInternational,
     email: "vvkindia23@gmail.com",
     address: {
       "@type": "PostalAddress",

@@ -1,13 +1,16 @@
+const contactNumber = "918929295155";
+
 export const firm = {
   name: "VVK & Associates",
   email: "vvkindia23@gmail.com",
-  phone: "+91 99908 60356",
-  phone2: "+91 89292 95155",
+  phone: "+91 89292 95155",
+  phoneInternational: `+${contactNumber}`,
+  phoneHref: `tel:+${contactNumber}`,
   address:
     "C-21, Front Office, Ground Floor, Sector-6, Noida – 201301, Uttar Pradesh, India",
   branch:
     "Ground Floor, Tower B4, Spaze IT Park, Sector 49, Sohna Road, Gurugram – 122018, Haryana, India",
-  whatsapp: "https://wa.me/919990860356",
+  whatsapp: `https://wa.me/${contactNumber}`,
   maps: "https://www.google.com/maps/search/?api=1&query=C-21+Sector+6+Noida+201301",
 };
 export const services = [

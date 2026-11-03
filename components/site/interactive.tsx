@@ -869,9 +869,23 @@ export function Footer() {
           <div className="footer-contact-row">
             <Phone size={18} aria-hidden="true" />
             <div>
-              <span className="footer-contact-label">CALL OUR TEAM</span>
-              <a href="tel:+919990860356">{firm.phone}</a>
-              <a href="tel:+918929295155">{firm.phone2}</a>
+              <span className="footer-contact-label">CALL OR WHATSAPP</span>
+              <a href={firm.phoneHref}>{firm.phone}</a>
+              <a
+                className="footer-whatsapp"
+                href={firm.whatsapp}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="/images/whatsapp.svg"
+                  width={17}
+                  height={17}
+                  alt=""
+                  aria-hidden="true"
+                />
+                Chat on WhatsApp <ArrowUpRight size={14} />
+              </a>
             </div>
           </div>
           <div className="footer-contact-row">
