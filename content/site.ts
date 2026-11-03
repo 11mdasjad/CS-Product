@@ -219,8 +219,8 @@ export const partners = [
     name: "CA Vikash Kumar",
     initials: "VK",
     qualification: "B.Com, ACA, ID (IICA)",
-    role: "Founder",
-    designation: "Founder, VVK & Associates, Chartered Accountants",
+    role: "Founding Partner",
+    designation: "Founding Partner, VVK & Associates, Chartered Accountants",
     fullBio: [
       "CA Vikash Kumar has over 10 years of professional experience in audit, taxation, assurance, financial reporting, and regulatory matters. His professional experience encompasses assignments across corporates, banking institutions, Public Sector Undertakings (PSUs), and entities operating in diverse sectors.",
       "His core areas of professional experience include GST and Income Tax litigation and dispute resolution, covering GST assessment and adjudication proceedings, appellate matters, representation before the GST Appellate Tribunal (GSTAT), and Income Tax assessment and appellate proceedings before the competent authorities and appellate forums. He is associated with tax matters at various stages of assessment, adjudication, and appellate proceedings in accordance with the applicable statutory and regulatory framework.",

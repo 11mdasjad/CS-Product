@@ -447,7 +447,7 @@ export function TeamCards({ expand = false }: { expand?: boolean }) {
               <span className="portrait-monogram">{p.initials}</span>
             )}
             <span className="portrait-caption">
-              {p.role === "Founder" ? "FOUNDER" : "PARTNER"} / 0{i + 1}
+              PARTNER / 0{i + 1}
             </span>
             <ArrowUpRight size={25} />
           </Link>

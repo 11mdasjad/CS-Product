@@ -26,7 +26,7 @@ const meta: Record<string, [string, string]> = {
   ],
   team: [
     "Our Partners",
-    "Meet CA Vikash Kumar, Founder, and founding partners CA Kapil Arora and CA Veer Singh of VVK & Associates.",
+    "Meet founding partners CA Vikash Kumar, CA Kapil Arora and CA Veer Singh of VVK & Associates.",
   ],
   insights: [
     "Insights & Blogs",
