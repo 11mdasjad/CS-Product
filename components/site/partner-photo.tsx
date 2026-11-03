@@ -11,8 +11,8 @@ export function PartnerPhoto({
     <img
       src={partner.image!}
       alt={partner.name}
-      width={partner.studioPortrait ? 1122 : 1024}
-      height={partner.studioPortrait ? 1402 : 1536}
+      width={partner.imageWidth ?? 1122}
+      height={partner.imageHeight ?? 1402}
       loading={priority ? "eager" : "lazy"}
       fetchPriority={priority ? "high" : undefined}
     />

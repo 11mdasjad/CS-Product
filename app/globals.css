@@ -3743,10 +3743,6 @@ summary {
   display: block;
 }
 @media (max-width: 640px) {
-  .partner-portrait.has-photo img {
-    transform: scale(1.6);
-    transform-origin: 50% 0;
-  }
   .profile-portrait {
     max-width: 380px;
     margin: 0 auto;
