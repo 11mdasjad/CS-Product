@@ -141,3 +141,5 @@ Vikash portrait updated on 3 November 2026 to the user's supplied upper-body pho
 Contact update: the removed number is no longer used in website contact details, telephone metadata or WhatsApp links. The remaining number, +91 89292 95155, is the single contact source in `content/site.ts`. Footer chat, floating WhatsApp button, contact/consultation pages and enquiry fallbacks use `https://wa.me/918929295155`. This is a click-to-chat integration; it opens WhatsApp for the visitor and does not send messages automatically or require WhatsApp Business API credentials.
 
 Vikash's current portrait is now the user's latest close-up (`WhatsApp Image 2026-11-03 at 16.04.42-5.jpeg`), copied unchanged to `public/images/vikash-closeup.jpg` (481 × 548). It replaces the previous portrait in all shared team cards, the profile and Person metadata.
+
+Kapil's current portrait is the user's supplied original (`WhatsApp Image 2026-11-03 at 16.27.10.jpeg`), copied unchanged to `public/images/kapil-portrait.jpg` (1052 × 1280). It replaces the enhanced version in shared cards, the dedicated profile and Person metadata. Card framing keeps his hair and face visible.

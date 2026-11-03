@@ -11,6 +11,11 @@ export function PartnerPhoto({
     <img
       src={partner.image!}
       alt={partner.name}
+      style={
+        partner.imagePosition
+          ? { objectPosition: partner.imagePosition }
+          : undefined
+      }
       width={partner.imageWidth ?? 1122}
       height={partner.imageHeight ?? 1402}
       loading={priority ? "eager" : "lazy"}
