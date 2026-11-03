@@ -45,7 +45,7 @@ export function Brand() {
     <Link href="/" className="brand" aria-label="VVK & Associates home">
       <img
         className="brand-logo"
-        src="/images/ca-logo.png"
+        src="/images/ca-logo-no-circle.png"
         alt="CA logo"
         width={62}
         height={62}

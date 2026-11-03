@@ -3834,7 +3834,7 @@ summary {
   height: 64px;
   padding: 5px;
   background: #fff;
-  border-radius: 50%;
+  border-radius: 8px;
 }
 .footer .brand-name {
   color: #fff;
