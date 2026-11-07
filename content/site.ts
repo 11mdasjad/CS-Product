@@ -222,7 +222,7 @@ export const partners = [
     role: "Founding Partner",
     designation: "Founding Partner, VVK & Associates, Chartered Accountants",
     fullBio: [
-      "CA Vikash Kumar has over 10 years of professional experience in audit, taxation, assurance, financial reporting, and regulatory matters. His professional experience encompasses assignments across corporates, banking institutions, Public Sector Undertakings (PSUs), and entities operating in diverse sectors.",
+      "CA Vikash Kumar has over a decade of professional experience in audit, taxation, assurance, financial reporting, and regulatory matters. His professional experience encompasses assignments across corporates, banking institutions, Public Sector Undertakings (PSUs), and entities operating in diverse sectors.",
       "His core areas of professional experience include GST and Income Tax litigation and dispute resolution, covering GST assessment and adjudication proceedings, appellate matters, representation before the GST Appellate Tribunal (GSTAT), and Income Tax assessment and appellate proceedings before the competent authorities and appellate forums. He is associated with tax matters at various stages of assessment, adjudication, and appellate proceedings in accordance with the applicable statutory and regulatory framework.",
       "In addition to tax litigation, his professional experience includes Statutory & Internal Audits, Assurance Services, Corporate Advisory, Financial Reporting, and Regulatory Compliance. He has been associated with professional assignments for PSUs, large corporate entities, banking institutions, and businesses operating in the infrastructure and power sectors.",
     ],
@@ -230,7 +230,7 @@ export const partners = [
     image: "/images/vikash-closeup.jpg",
     imageWidth: 481,
     imageHeight: 548,
-    bio: "CA Vikash Kumar has over 10 years of professional experience in audit, taxation, assurance, financial reporting, and regulatory matters. His core areas include GST and Income Tax litigation and dispute resolution.",
+    bio: "CA Vikash Kumar has over a decade of professional experience in audit, taxation, assurance, financial reporting, and regulatory matters. His core areas include GST and Income Tax litigation and dispute resolution.",
     more: "His practice also includes regulatory compliance and representation in Income Tax and GST assessment and appellate matters. He brings a documentation-led approach to complex financial questions.",
   },
   {
