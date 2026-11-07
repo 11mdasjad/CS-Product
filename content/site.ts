@@ -234,11 +234,23 @@ export const partners = [
     more: "His practice also includes regulatory compliance and representation in Income Tax and GST assessment and appellate matters. He brings a documentation-led approach to complex financial questions.",
   },
   {
+    slug: "veer-singh",
+    name: "CA Veer Singh",
+    initials: "VS",
+    qualification: "Chartered Accountant",
+    role: "Founding Partner",
+    focus: "Accounting & financial management",
+    image: "/images/veer-enhanced.png",
+    studioPortrait: true,
+    bio: "CA Veer Singh brings experience across corporate finance and professional practice, with expertise in accounting, financial reporting, budgeting, MIS, Income Tax, financial controls and process improvement.",
+    more: "He works closely with management teams to strengthen financial governance, improve reporting quality, enhance profitability visibility and build scalable finance processes.",
+  },
+  {
     slug: "kapil-arora",
     name: "CA Kapil Arora",
     initials: "KA",
     qualification: "Chartered Accountant (CS) | LL.B.",
-    role: "Partner",
+    role: "Founding Partner",
     fullBio: [
       "CA Kapil Arora is an experienced finance and tax professional with over a decade of expertise in Direct and Indirect Taxation, Corporate Advisory, Tax Planning, and Regulatory Compliance. As a Partner at VVK & Associates, he provides strategic, technically sound, and business-oriented solutions to corporates, startups, MSMEs, and individuals.",
       "With a strong focus on tax efficiency, business structuring, and regulatory compliance, he is committed to delivering value-driven advisory services. His client-centric approach, professional integrity, and commercial insight make him a trusted advisor, helping businesses navigate complex regulatory environments and achieve sustainable growth.",
@@ -251,18 +263,6 @@ export const partners = [
     studioPortrait: true,
     bio: "CA Kapil Arora is an experienced finance and tax professional with over a decade of expertise in Direct and Indirect Taxation, Corporate Advisory, Tax Planning, and Regulatory Compliance.",
     more: "With a strong focus on tax efficiency, business structuring, and regulatory compliance, he is committed to delivering value-driven advisory services. His client-centric approach, professional integrity, and commercial insight make him a trusted advisor, helping businesses navigate complex regulatory environments and achieve sustainable growth.",
-  },
-  {
-    slug: "veer-singh",
-    name: "CA Veer Singh",
-    initials: "VS",
-    qualification: "Chartered Accountant",
-    role: "Founding Partner",
-    focus: "Accounting & financial management",
-    image: "/images/veer-enhanced.png",
-    studioPortrait: true,
-    bio: "Veer supports businesses with accounting, financial reporting and compliance. He helps management teams develop useful reporting and stronger financial processes.",
-    more: "His areas of work include bookkeeping, financial statements, audit support, Income Tax and GST compliance, budgeting and MIS. His perspective combines corporate finance and professional practice.",
   },
 ];
 export const processSteps = [
