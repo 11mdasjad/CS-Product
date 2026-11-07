@@ -2665,6 +2665,29 @@ details > p {
   object-fit: contain;
   flex-shrink: 0;
 }
+.header .brand {
+  gap: 18px;
+}
+.header .brand-logo {
+  width: 92px;
+  height: 92px;
+}
+.header .brand-name {
+  font-size: 17px;
+  letter-spacing: 1.6px;
+  line-height: 1.6;
+  white-space: nowrap;
+}
+.header .brand-name small {
+  font-size: 10px;
+  letter-spacing: 1.8px;
+}
+@media (max-width: 1200px) {
+  .header .brand-logo {
+    width: 74px;
+    height: 74px;
+  }
+}
 @media (max-width: 1190px) {
   .brand-logo {
     width: 52px;
@@ -2675,6 +2698,44 @@ details > p {
   .brand-logo {
     width: 48px;
     height: 48px;
+  }
+  .header {
+    gap: 12px;
+  }
+  .header .brand {
+    gap: 12px;
+  }
+  .header .brand-logo {
+    width: 64px;
+    height: 64px;
+  }
+  .header .brand-name {
+    font-size: 13px;
+    letter-spacing: 1px;
+  }
+  .header .brand-name small {
+    font-size: 8px;
+    letter-spacing: 1.1px;
+  }
+  .header .menu-toggle {
+    flex-shrink: 0;
+  }
+}
+@media (max-width: 380px) {
+  .header .brand {
+    gap: 8px;
+  }
+  .header .brand-logo {
+    width: 56px;
+    height: 56px;
+  }
+  .header .brand-name {
+    font-size: 11.5px;
+    letter-spacing: 0.8px;
+  }
+  .header .brand-name small {
+    font-size: 7px;
+    letter-spacing: 0.9px;
   }
 }
 
