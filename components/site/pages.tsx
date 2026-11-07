@@ -74,9 +74,8 @@ export function Process() {
           </h2>
         </div>
         <p>
-          Thoughtful advice begins with understanding.
-          <br />
-          Here’s how we move forward, together.
+          Thoughtful advice begins with understanding. Here’s how we move
+          forward, together.
         </p>
       </div>
       <div className="process-grid">
@@ -183,9 +182,8 @@ export function HomePage({ articles }: { articles: Article[] }) {
             </h2>
           </div>
           <p>
-            From your first business decision to the next chapter.
-            <br />
-            Considered financial support, under one roof.
+            From your first business decision to the next chapter. Considered
+            financial support, under one roof.
           </p>
         </div>
         <ServicesGrid />
@@ -199,8 +197,8 @@ export function HomePage({ articles }: { articles: Article[] }) {
             with <em>understanding.</em>
           </h2>
           <p>
-            Professional rigour, a personal approach and
-            <br />a commitment to doing things with care.
+            Professional rigour, a personal approach and a commitment to doing
+            things with care.
           </p>
           <Link className="text-link" href="/about">
             What matters to us <ArrowUpRight size={18} />

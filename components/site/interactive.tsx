@@ -836,8 +836,8 @@ export function Footer() {
             <em>Confidence tomorrow.</em>
           </p>
           <p className="footer-description">
-            Audit, taxation and financial advisory.
-            <br />A clear perspective for your next step.
+            Audit, taxation and financial advisory. A clear perspective for your
+            next step.
           </p>
           <Link href="/consultation" className="footer-consultation">
             Let’s talk business <ArrowUpRight size={18} />

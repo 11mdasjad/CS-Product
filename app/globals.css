@@ -1294,15 +1294,6 @@ details > p {
   max-width: 68ch;
   min-width: 0;
 }
-.editorial-grid .firm-copy p {
-  font-size: 16px;
-  line-height: 1.75;
-  text-align: justify;
-  text-align-last: left;
-}
-.firm-copy p + p {
-  margin-top: 1.25em;
-}
 .mission-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -2533,10 +2524,6 @@ details > p {
   }
   .editorial-grid .lead {
     font-size: 17px;
-  }
-  .editorial-grid .firm-copy p {
-    text-align: left;
-    text-wrap: pretty;
   }
   .mission-grid {
     grid-template-columns: 1fr;
@@ -4112,4 +4099,51 @@ summary {
 .footer-whatsapp img,
 .footer-whatsapp svg {
   flex-shrink: 0;
+}
+
+/* Shared reading rhythm for paragraphs across all public pages. */
+.site-frame :is(main, footer) p {
+  min-width: 0;
+  max-inline-size: 70ch;
+  line-height: 1.75;
+  text-align: left;
+  text-align-last: auto;
+  text-wrap: pretty;
+  overflow-wrap: break-word;
+}
+.site-frame :is(.about-copy, .firm-copy, .partner-profile, .article-body) p:not(:where(.profile-designation)) {
+  margin-block: 0;
+}
+.site-frame :is(.about-copy, .firm-copy, .partner-profile, .article-body) p + p {
+  margin-block-start: 1.25em;
+}
+.site-frame .about-copy h2 + p,
+.site-frame .partner-profile h2 + p {
+  margin-block-start: 1.25em;
+}
+.site-frame .about-copy p + .inline-values,
+.site-frame .partner-profile p + .button,
+.site-frame .article-body p + .editorial-note {
+  margin-block-start: 1.5em;
+}
+@media (min-width: 981px) {
+  .site-frame :is(main, footer) p {
+    text-align: justify;
+    text-align-last: left;
+    hyphens: auto;
+    hyphenate-limit-chars: 8 3 3;
+  }
+}
+/* Labels, form feedback and addresses use natural word spacing. */
+.site-frame :is(.enquiry-form, .contact-note, .office-grid, .cms, .empty-state) p,
+.site-frame p:is(.form-note, .profile-designation, .footer-statement) {
+  text-align: left;
+  text-align-last: auto;
+  hyphens: none;
+}
+.site-frame .article-heading > p {
+  text-align: center;
+  text-align-last: auto;
+  text-wrap: balance;
+  hyphens: none;
 }
