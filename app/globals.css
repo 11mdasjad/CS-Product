@@ -1282,14 +1282,26 @@ details > p {
 }
 .editorial-grid {
   display: grid;
-  grid-template-columns: 1fr 1.3fr;
-  gap: 12%;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.5fr);
+  gap: clamp(32px, 6vw, 96px);
+  align-items: start;
 }
 .editorial-grid h2 {
   margin-top: 20px;
 }
-.editorial-grid p + p {
-  margin-top: 20px;
+.firm-copy {
+  width: 100%;
+  max-width: 68ch;
+  min-width: 0;
+}
+.editorial-grid .firm-copy p {
+  font-size: 16px;
+  line-height: 1.75;
+  text-align: justify;
+  text-align-last: left;
+}
+.firm-copy p + p {
+  margin-top: 1.25em;
 }
 .mission-grid {
   display: grid;
@@ -2521,6 +2533,10 @@ details > p {
   }
   .editorial-grid .lead {
     font-size: 17px;
+  }
+  .editorial-grid .firm-copy p {
+    text-align: left;
+    text-wrap: pretty;
   }
   .mission-grid {
     grid-template-columns: 1fr;

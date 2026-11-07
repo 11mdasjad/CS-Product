@@ -504,7 +504,7 @@ export function AboutPage() {
             <em>your business.</em>
           </h2>
         </div>
-        <div>
+        <div className="firm-copy">
           <p className="lead">
             Our work brings together audit, taxation, bookkeeping and financial
             advisory. Our approach begins with listening.
