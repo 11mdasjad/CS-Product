@@ -514,9 +514,9 @@ export function AboutPage() {
             responsibilities and a practical plan.
           </p>
           <p>
-            Based in Noida, with a branch listed in Gurugram, our partners bring
-            complementary experience across audit, corporate advisory, taxation
-            and financial management.
+            Based in Noida, with branches listed in Delhi and Gurugram, our
+            partners bring complementary experience across audit, corporate
+            advisory, taxation and financial management.
           </p>
         </div>
       </section>
