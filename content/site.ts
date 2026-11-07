@@ -218,7 +218,7 @@ export const partners = [
     slug: "vikash-kumar",
     name: "CA Vikash Kumar",
     initials: "VK",
-    qualification: "Chartered Accountant, ID(IICA)",
+    qualification: "Chartered Accountant, ID (IICA)",
     role: "Founding Partner",
     designation: "Founding Partner, VVK & Associates, Chartered Accountants",
     fullBio: [
